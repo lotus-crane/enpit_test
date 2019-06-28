@@ -29,7 +29,7 @@
              case 'multiply':
                  return decimalPointCalculate(f1 * f2, decimalPoint)
              case 'mod':
-                 return decimalPointCalculate(f1 / f2, decimalPoint)
+                 // return decimalPointCalculate(f1 / f2, decimalPoint)
                  return decimalPointCalculate(f1 / f2, decimalPoint)
              case 'sqrt':
                  // return decimalPointCalculate(Math.sqrt(f1), decimalPoint)
@@ -50,8 +50,8 @@
              return Math.floor(value)
          }
          if(decimalPoint === 'round'){
-             // return Math.round(value)
-             return Math.floor(value)
+            return Math.round(value)
+             //return Math.floor(value)
          }
          return value
      }
